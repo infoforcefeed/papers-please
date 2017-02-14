@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><base href="http://arXiv.org/html/0901.4016v2/" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.2.5" />
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock > div.content {
+  padding-left: 2.0em;
+}
+
+div.attribution {
+  text-align: right;
+}
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.verseblock div.content {
+  white-space: pre;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+div.olist2 ol {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hlist td {
+  padding-bottom: 5px;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: italic;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-content {
+  padding-left: 2.0em;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+</style>
+<title>A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable</title>
+</head>
+<body><address><p><a href="http://arXiv.org/abs/0901.4016v2">arXiv:0901.4016v2</a>  [cs.SE]  26 Jan 2009</p></address>
+
+<div id="header">
+<h1>A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable</h1>
+<span id="author">Daniel Shawcross Wilkerson</span><br />
+<span id="revision">version 1.0,</span>
+26 January 2009
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="para"><p>Identifiers (IDs) are pervasive throughout our modern life.  We
+suggest that these IDs would be easier to manage and remember if they
+were easily readable, spellable, and pronounceable.  As a solution to
+this problem we propose using PRO-nouncable QUINT-uplets of
+alternating unambiguous consonants and vowels: <em>proquints</em>.</p></div>
+</div>
+</div>
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="para"><p>Our life is full of identifying numbers.  However the number-ness of
+these numbers is irrelevant.  A credit-card number is not a <em>number</em>
+exactly &#8212; when was the last time you did arithmetic on one?  Mostly
+these numbers are <em>identifiers</em>: their only function is to be unique.
+The problem is, they are getting longer as the world of things that
+must be uniquely identified gets larger: the number of things goes up,
+previously disjoint contexts merge, and history gets longer.</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Dotted quads IP addresses, e.g. 127.0.0.1, will soon (someday?),
+   with IPv6, be twice as long.
+</p>
+</li>
+<li>
+<p>
+Eight hex-digit Memory addresses, e.g. 0xF074B0CD, will soon, with
+   64-bit machines, be twice as long.
+</p>
+</li>
+<li>
+<p>
+Nine-digit Social security numbers are already being re-used with
+   obvious attendant problems.
+</p>
+</li>
+</ul></div>
+<div class="para"><p>Most codes are designed to maximize information density.  Humans often
+must manipulate identifiers personally and there are therefore other
+dimensions to the problem that should also be considered.  Here our
+goal here is not to have a narrow, "vertical", solution that is
+optimized for only one dimension, such as information density, but a
+broad "horizontal" solution that is a good solution for <em>all</em> of the
+relevant concerns, especially those of <em>humans</em>.</p></div>
+<div class="para"><p>In general what would help the humans would be if IDs were not only
+unique, but were also that are readable, spellable, and pronounceable
+and just generally convenient for a human to use &#8212; as well as being a
+reasonably efficient information encoding.  We therefore propose
+PRO-nouncable QUINT-uplets of alternating unambiguous consonants and
+vowels, or "proquints", as the solution.</p></div>
+<div class="para"><p>In this essay we first derive an initial naive solution from the
+relevant concerns.  Next we review other aspects of human interaction
+with the solution and thereby derive the details.  We then compute the
+information density of the solution.  Finally we summarize the
+resulting protocol.</p></div>
+</div>
+<h2 id="_distinguishable_available_sounds_and_symbols">Distinguishable Available Sounds and Symbols</h2>
+<div class="sectionbody">
+<div class="para"><p>There is only so much Shannon entropy <strong>[Shannon-1948, Shannon-1949,
+Shannon-1993, Shannon-1951]</strong> you can get by pushing air through
+flapping organs originally purposed for eating and breathing.  We
+assume it best to re-use the method to which natural language has
+already converged.</p></div>
+<div class="para"><p>Our initial idea is to encode numbers as strings of alternating
+phonetically-unambiguous consonants and vowels.
+<a href="http://www.antimoon.com/how/pronunc-soundsipa.htm">There seem to be</a>
+<strong>[pronounce]</strong> 24 consonants and 20 vowels in English.
+<a href="http://en.wikipedia.org/wiki/English_pronunciation">It gets more
+complex</a> <strong>[pronounce2]</strong> if you look more carefully.</p></div>
+<div class="para"><p>Some consonants are too hard to encode or to hear the difference
+between.  There are 16 unambiguous 1-letter consonants (omitting what
+we consider to be the wrongly-categorized letter "r"):</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    b d f g h j k l m n p s t v w z,</tt></pre>
+</div></div>
+<div class="para"><p>and 3 more two-letter:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    sh ch th.</tt></pre>
+</div></div>
+<div class="para"><p>Having 16 sounds gives 4 bits right there and all in a
+single-character spelling, so we think sticking to the above
+one-letter consonants is good.</p></div>
+<div class="para"><p>There are 6 unambiguous 1-letter vowels (again disagreeing with the
+categorization of the letter "r"):</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    a e i o u r.</tt></pre>
+</div></div>
+<div class="para"><p>If we just had two more vowels we would have 8 sounds or 3 bits.  Then
+we could use consonant-vowel order (reversing the pair) or stress
+(indicated by, say, a capital letter) to get one more bit.  This would
+yield a total of 8 bits for a consonant-vowel pair.</p></div>
+</div>
+<h2 id="_serving_multiple_human_constraints">Serving Multiple Human Constraints</h2>
+<div class="sectionbody">
+<div class="para"><p>Recall that the proquint goals are multiple and include readability
+and spellability and just general convenience and general fitness to
+the problem: this is a system to used by humans who do not like
+complexity.</p></div>
+<div class="para"><p>Therefore we think it is important to make the textual encoding of the
+sounds simple, by</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+writing all proquints using the same character width,
+</p>
+</li>
+<li>
+<p>
+not introducing case differences to encode information, and
+</p>
+</li>
+<li>
+<p>
+not using non-alpha chars to encode other vowels (@ for the "a" in
+    "at").
+</p>
+</li>
+</ul></div>
+<div class="para"><p>Further, a simple (C=consonant, V=vowel) CVCVC
+pronounceable-five-group or "proquint" feels right as a word.  In
+fact, we can get rid of two of the vowels, say "e" and "r", and still
+encode 2 bits in one vowel.  This method makes the information
+contained in one proquint a convenient number:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    (log2 (* 16.0 4.0 16.0 4.0 16.0))
+    16.0</tt></pre>
+</div></div>
+<div class="para"><p>So four proquints suffices to encode 64 bits and two suffice for 32
+bits.  We wonder why IP addresses aren't encoded this way &#8212; they sure
+would be easier to remember.</p></div>
+<div class="para"><p>Since one may also want to fall back on saying each letter separately
+and therefore each should likely be a single syllable in English, we
+eliminate "w", which as previously-mentioned was a source of ambiguity
+already.  In its place we promote "r" to a consonant.</p></div>
+<div class="para"><p>Getting rid of ambiguities between vowels is a good idea for making
+this system more international, though there are persistent
+difficulties: Japanese have difficulty distinguishing "l" and "r",
+Hungarians have difficulty pronouncing "w", and "l" can easily sound
+like a "w" (a mutation occurring in the history of my middle name).
+My proof-readers have sent me many more examples from other languages
+&#8212; attempting to eliminate all such ambiguities is impossible, but we
+have prevented some of the worst ones above.</p></div>
+<div class="para"><p>Some proquint sequences ending in "h" take some extra effort to
+pronounce and hear, but since there is always exactly one consonant
+where you expect one, there is less ambiguity than in natural spoken
+English: if you don't hear a consonant when you expected one, it was
+an "h", the empty consonant.  The only other option is to replace "h"
+with "x" and we really can't say that doing so is an improvement: "x"
+is usually pronounced as "ks" which is really a consonant cluster and
+confuses the rhythm.</p></div>
+<div class="para"><p>There is another subtle reason not to use "x": the standard notation
+for a hex string starts with a prefix that includes an "x" so it is
+therefore possible to unambiguously distinguish between a proquint and
+a hex string in standard notation.</p></div>
+<div class="para"><p>A sequence of proquints should be separated by something standard,
+such as dashes.  While the dash is intended to induce a pause, for
+easy flow of pronunciation we suggest an unused vowel sound be used.
+Since we don't use the vowel "e", we suggest the dash be pronounced as
+"eh".</p></div>
+<div class="para"><p>See the "Conclusion and Specification" section below for the full
+specification of the resulting proquint coding scheme.</p></div>
+</div>
+<h2 id="_information_density">Information Density</h2>
+<div class="sectionbody">
+<div class="para"><p>While information density is not the only goal, it is a concern for
+any coding system.  Note that we get 16 bits out of 5 letters, which
+gives us an proquint information density of:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    (/ 16.0 5.0)
+    3.2</tt></pre>
+</div></div>
+<div class="para"><p>This is close to the density of 4 for hexadecimal and almost the same
+as the density 3.32 for decimal digits.</p></div>
+<div class="para"><p>However, note that unbroken strings of hex or decimal digits are quite
+unreadable, and they are usually broken into groups of at most four,
+whereas proquints are readable in groups of five.  Taking this into
+account gives hex a density of 3.2, decimal 2.65, and proquint 2.86.</p></div>
+<h3 id="_density_as_compared_to_credit_card_numbers">Density as Compared To Credit Card Numbers</h3><div style="clear:left"></div>
+<div class="para"><p>In particular, why aren't credit card numbers proquints instead of
+numbers?</p></div>
+<div class="para"><p>The density of four blocks of four decimal digits, including separators is</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    (/ (log2 (* 10000.0 10000.0 10000.0 10000.0 ))
+       (+ (* 4 4) (* 3 1)))
+    2.7974131325367266</tt></pre>
+</div></div>
+<div class="para"><p>The density of three blocks proquints, including separators is</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    (* 16.0 6.0 16.0 6.0 16.0)
+    147456.0
+    (/ (log2 (* 147456.0 147456.0 147456.0))
+       (+ (* 3 5) (* 2 1)))
+    3.0299867649604084</tt></pre>
+</div></div>
+<h3 id="_density_as_compared_to_english">Density as Compared To English</h3><div style="clear:left"></div>
+<div class="para"><p>Bruce Schneier says in "Applied Cryptography" <strong>[Schneier-1996,
+pp. 233-234]</strong> that Shannon computed an entropy of 2.3 bits per letter
+for 8-letter chunks; other computations getting lower numbers,
+Schneier settling on 1.3 for general purposes.  So we are above the
+information rate expected for English, but not dramatically so.  We
+suspect the fact that proquints are more information-dense than
+English is the reason proquints must be pronounced a bit more
+carefully than English &#8212; there's no such thing as a free lunch.</p></div>
+</div>
+<h2 id="_proquints_as_a_mnemonic_password_scheme">Proquints As A Mnemonic Password Scheme</h2>
+<div class="sectionbody">
+<div class="para"><p>It is a well-known problem that people often create weak passwords, at
+least partly due to their desire to create mnemonic passwords.
+Mnemonic schemes have been suggested but the information density /
+password strength versus that of standard password schemes can be a
+challenge to state precisely, as the useful entropy of a password
+amounts only the entropy relative to the implied expectations encoded
+in an attackers dictionary.  Various empirical studies have been made
+<strong>[YBA-2000, KRC-2006]</strong>.  At least one method of generating random
+pronounceable passwords have been shown to be insecure <strong>[GD-1994]</strong>.
+Narayanan and Shmatikov <strong>[NS-2005]</strong> claim that "as long as passwords
+remain human-memorable, they are vulnerable to "smart-dictionary"
+attacks even when the space of potential passwords is large."</p></div>
+<div class="para"><p>Of course a simple scheme using proquints can generate passwords of
+known strength that are still quite readable, spellable, and
+pronounceable:</p></div>
+<div class="olist"><ol>
+<li>
+<p>
+generate random 32 (or 48 or 64 bits),
+</p>
+</li>
+<li>
+<p>
+convert them to two (or three or four) proquints, and
+</p>
+</li>
+<li>
+<p>
+tell the user that's their password.
+</p>
+</li>
+</ol></div>
+<div class="para"><p>The extent to which a user would find a password so generated to be
+mnemonic is still an open question.  Narayanan points out to me
+<strong>[N-2009-p]</strong> that if users are allowed to regenerate passwords until
+they find one that is particularly mnemonic then the strength of the
+above password scheme may not be quite as imagined.</p></div>
+<div class="para"><p>We imagine one possible security threat is that proquints are rather
+fun to pronounce, and we find ourselves doing so especially when we
+are attempting to memorize or recall one.  Therefore perhaps users of
+proquint-encoded passwords should be admonished to refrain from this
+temptation.</p></div>
+</div>
+<h2 id="_an_easy_path_to_adoption">An Easy Path to Adoption</h2>
+<div class="sectionbody">
+<div class="para"><p>Any protocol that currently uses an opaque identifier somewhere can
+immediately begin to use proquints by simply printing any such
+identifiers in proquint form as well and accepting proquints as
+alternatives to such identifiers.</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Debuggers could input and output memory addresses as proquints as
+   an alternative to hex.
+</p>
+</li>
+<li>
+<p>
+Network tools such as browsers, ping, netstat, traceroute,
+   etc. could input and output proquints as an alternative to dotted
+   quads.
+</p>
+</li>
+<li>
+<p>
+Password generators could generate the proquint form, as above.
+</p>
+</li>
+<li>
+<p>
+Hash functions such as sha1 could use proquints as as alternative
+   notation for the hashvalue.  Tools that use hash values of objects
+   as their identifiers, such as version control systems like
+   monotone, mercurial, and git, could do the same.
+</p>
+</li>
+<li>
+<p>
+Tools that use public-key encryption could encode the
+   public/private key-pairs as proquints.  It might actually be
+   possible to memorize your public key if you chanted it enough
+   times.
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_conclusion_and_specification">Conclusion and Specification</h2>
+<div class="sectionbody">
+<div class="para"><p>In sum, we propose encoding a 16-bit string as a proquint of
+alternating consonants and vowels as follows.</p></div>
+<div class="para"><p>Four-bits as a consonant:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    0 1 2 3 4 5 6 7 8 9 A B C D E F
+    b d f g h j k l m n p r s t v z</tt></pre>
+</div></div>
+<div class="para"><p>Two-bits as a vowel:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    0 1 2 3
+    a i o u</tt></pre>
+</div></div>
+<div class="para"><p>Whole 16-bit word, where "con" = consonant, "vo" = vowel:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>     0 1 2 3 4 5 6 7 8 9 A B C D E F
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    |con    |vo |con    |vo |con    |
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</tt></pre>
+</div></div>
+<div class="para"><p>Separate proquints using dashes, which can go un-pronounced or be
+pronounced "eh".  The suggested optional magic number prefix to a
+sequence of proquints is "0q-".</p></div>
+<div class="para"><p>Here are some IP dotted-quads and their corresponding proquints.</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>    127.0.0.1       lusab-babad
+    63.84.220.193   gutih-tugad
+    63.118.7.35     gutuk-bisog
+    140.98.193.141  mudof-sakat
+    64.255.6.200    haguz-biram
+    128.30.52.45    mabiv-gibot
+    147.67.119.2    natag-lisaf
+    212.58.253.68   tibup-zujah
+    216.35.68.215   tobog-higil
+    216.68.232.21   todah-vobij
+    198.81.129.136  sinid-makam
+    12.110.110.204  budov-kuras</tt></pre>
+</div></div>
+<div class="para"><p>An Open Source implementation of a converter between strings encoded
+as dotted quads, hex, decimal, and proquints is available
+<strong>[proquint-github]</strong>.</p></div>
+</div>
+<h2 id="_acknowledgements">Acknowledgements</h2>
+<div class="sectionbody">
+<div class="para"><p>We gratefully acknowledge Simon Goldsmith, Karl Chen, Erick Armbrust,
+and Arvind Narayanan for their proofreading and/or discussion of this
+article.  Any remaining errors are mine alone.</p></div>
+</div>
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<h3 id="_open_source_implementation">Open Source implementation</h3><div style="clear:left"></div>
+<div class="para"><p><strong>[proquint-github]</strong> <a href="http://github.com/dsw/proquint">http://github.com/dsw/proquint</a></p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+An implementation in C of a converter between proquint, hex, and
+   decimal strings.
+</p>
+</li>
+<li>
+<p>
+An implementation in Perl5 of a converter between dotted quads and
+   hex.
+</p>
+</li>
+</ul></div>
+<h3 id="_print">Print</h3><div style="clear:left"></div>
+<div class="para"><p><strong>[GD-1994]</strong> Ravi Ganesan and Chris Davies.  "A New Attack on Random
+Pronounceable Password Generators".  <em>Proceedings of the 17th
+NIST-NCSC National Computer Security Conference</em>.  1994.  pp. 184-197.</p></div>
+<div class="para"><p><strong>[KRC-2006]</strong> Cynthia Kuo, Sasha Romanosky, and Lorrie Faith Cranor.
+"Human Selection of Mnemonic Phrase-based Passwords", <em>Symposium on
+Usable Privacy and Security (SOUPS) 2006</em>, July 12 - 14, 2006.</p></div>
+<div class="para"><p><strong>[NS-2005]</strong> Arvind Narayanan and Vitaly Shmatikov.  "Fast Dictionary
+Attacks on Passwords Using Time-Space Tradeoff".  <em>Proceedings of 12th
+ACM Conference on Computer and Communications Security (CCS)</em>.
+November 2005.  pp. 364-372.</p></div>
+<div class="para"><p><strong>[Schneier-1996]</strong> Bruce Schneier.  <em>Applied Cryptography</em>.  John Wiley
+&amp; Sons.  1996.</p></div>
+<div class="para"><p><strong>[Shannon-1948]</strong> C.E. Shannon, "A Mathematical Theory of
+Communication", <em>Bell System Technical Journal</em>, v. 27, n. 4, 1948,
+pp. 379-423, 623-656.</p></div>
+<div class="para"><p><strong>[Shannon-1949]</strong> C.E. Shannon, "Communication Theory of Secrecy
+Systems", <em>Bell System Technical Journal</em>, v. 28, n. 4, 1949,
+pp. 656-715.</p></div>
+<div class="para"><p><strong>[Shannon-1951]</strong> C.E. Shannon, "Predication and Entropy in Printed
+English", <em>Bell System Technical Journal</em>, v.30, n.1, 1951, pp. 50-64.</p></div>
+<div class="para"><p><strong>[Shannon-1993]</strong> C.E. Shannon, <em>Collected Papers: Claude Elwood
+Shannon</em>, N.J.A. Sloane and A.D. Wyner, eds., New York: IEEE Press,
+1993.</p></div>
+<div class="para"><p><strong>[YBA-2000]</strong> Jeff Yan, Alan Blackwell, Ross Anderson, and Alasdair
+Grant.  "The Memorability and Security of Passwords &#8212; Some Empirical
+Results".  Technical Report No. 500, Computer Laboratory, University
+of Cambridge, 2000.</p></div>
+<h3 id="_web">Web</h3><div style="clear:left"></div>
+<div class="para"><p><strong>[pronounce]</strong> Pronounceable sounds in English:
+<a href="http://www.antimoon.com/how/pronunc-soundsipa.htm">http://www.antimoon.com/how/pronunc-soundsipa.htm</a></p></div>
+<div class="para"><p><strong>[pronounce2]</strong> Wikipedia article on pronounceable sounds in English:
+<a href="http://en.wikipedia.org/wiki/English_pronunciation">http://en.wikipedia.org/wiki/English_pronunciation</a></p></div>
+<h3 id="_personal_communication">Personal Communication</h3><div style="clear:left"></div>
+<div class="para"><p><strong>[N-2009-p]</strong> Personal communication, Arvind Narayanan.</p></div>
+</div>
+<h2 id="_copyright">Copyright</h2>
+<div class="sectionbody">
+<div class="para"><p>Copyright 2009 Daniel S. Wilkerson</p></div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br />
+Last updated 2009-01-26 15:48:38 PDT
+</div>
+</div>
+</body>
+</html>
